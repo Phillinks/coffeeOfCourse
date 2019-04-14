@@ -1,0 +1,142 @@
+*{
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    box-sizing:border-box;
+    font-weight:300;
+    font-size:100%;
+    font-family:'Lato';
+}
+body{background-color:#ccc}
+ul{list-style:none}
+li{list-style:none}
+a{text-decoration:none}
+img{max-width:100%}
+
+.cabecalho{
+    position:fixed;
+    width:100%;
+    height:10%;
+    float:left;
+    margin-top:0%;
+    padding:1%;
+    background-color:rgba(0,0,0,0.8);
+    z-index:102;
+}
+.logo{
+    width:160px;
+    height:160px;
+    float:left;
+    padding:10px;
+    margin-left:4%;
+    background:url(../img/logo.png) center center/160px no-repeat;
+    font-size:0px
+}
+
+.btn-menu{
+    width:44px;
+    height:44px;
+    float:right;
+    text-align:center;
+    color:#FFF;
+    border-radius:44px;
+    cursor:pointer;
+    background:linear-gradient(to right, #CE2E3C,#DA6709)
+}
+
+.menu{
+    display:none;
+    width:100%;
+    height:100%;
+    position:fixed;
+    background-color:rgba(0,0,0,0.8);
+    top:0px;
+    left:0px;
+}
+.menu ul{
+    width:100%;
+    float:left;
+    text-align:center;
+}
+.menu li{
+    padding:1.5%;
+}
+.menu li a{
+    font-size:1.4em;
+    font-family: 'Lato';
+    color:#FFFFFF;
+    padding:1.5% 3%
+}
+.menu li a:hover{
+    color:rgb(255,140,0);
+}
+.btn-close{
+    font-size:1.5em;
+    float:right;
+    color:#FFFFFF;
+    cursor:pointer;
+    margin:2% 3%;
+}
+.btn-close:hover{
+    color:rgb(255,140,0);
+}
+
+.teste{
+    position:absolute;
+    width:100%;
+    top:200px
+}
+
+.footer{
+  float:left;
+  width:100%;
+  padding:2%;
+  color:#fff;
+  margin-top:850px;
+  background-color:rgba(0,0,0,0.8);
+}
+.footer img{
+  margin-top:20px;
+  margin-left:20px;
+}
+
+@media screen and (min-width:1024px){
+
+    .btn-menu{
+        display:none;
+    }
+
+    .btn-close{
+        display:none;
+    }
+
+    .menu{
+        width:auto;
+        line-height:70px;
+        float:right;
+        margin-right:10%;
+        background-color:transparent;
+        display:block;
+        font-size:0.8em;
+        font-family:'Lato';
+        position:static;
+    }
+
+    .menu li{
+        padding:10px;
+        float:left;
+        list-style:none;
+    }
+
+    .menu li a{
+        color:#FFF;
+        padding:10px;
+    }
+
+    .menu li a:hover{
+        color:rgb(255,140,0);
+    }   
+
+
+}
